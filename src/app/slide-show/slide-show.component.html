@@ -1,0 +1,14 @@
+<div class="slideshow-container">
+  <div #mySlides class="mySlides" *ngFor="let value of values">
+    <img class="weather-icon" *ngIf="value.img" [src]="value.img" alt="Weather icon">
+    <p class="content">{{value.label}}</p>
+  </div>
+
+  <a class="prev" (click)="plusSlides(-1)">❮</a>
+  <a class="next" (click)="plusSlides(1)">❯</a>
+
+</div>
+
+<div class="dot-container">
+  <span *ngFor="let value of values, index as i" class="dot" (click)="currentSlide(i+1)"></span>
+</div>

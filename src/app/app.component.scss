@@ -1,0 +1,10 @@
+@import "src/variables";
+
+.left-half {
+  background-image: url("../assets/background-image.jpg");
+
+  .overlay {
+    background: $primary;
+    background: linear-gradient(90deg, rgba(242, 203, 5, 0.9) 0%, rgba(242, 162, 12, 0.9) 100%);
+  }
+}

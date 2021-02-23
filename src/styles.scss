@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;0,900;1,400&display=swap');
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/primeng/resources/themes/fluent-light/theme.css';
+@import './variables';
+
+body {
+  background-color: $primary;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .h-md-100 {
+    height: 100vh;
+  }
+}
