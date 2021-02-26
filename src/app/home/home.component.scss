@@ -1,12 +1,18 @@
 @import "src/variables";
 
 .side-images {
-  //position: absolute;
-  //margin-left: -455px;
-  //margin: 0;
-  margin-left: 1em;
-  margin-right: 1em;
   margin-top: 2em;
+
+  @media (min-width: $mobile-width) {
+    // For desktop
+    margin-right: 1em;
+    margin-left: 2em;
+  }
+
+  @media (max-width: $mobile-width) {
+    // For mobile
+    padding: 1em;
+  }
 
   ul {
     list-style-type: none;
@@ -15,11 +21,8 @@
 
     li {
       iframe, img {
-        //width: 283px;
-        //height: 150px;
 
         max-width: 100%;
-        //max-height:100%;
 
         padding: 0;
         margin: 0;
@@ -45,6 +48,11 @@
   &:hover {
     opacity: 100%;
   }
+
+  @media (max-width: $mobile-width) {
+    // For mobile
+    margin-bottom: 1em;
+  }
 }
 
 .right-panel {
@@ -67,10 +75,7 @@
     text-shadow: $shadow;
     margin-top: 400px;
 
-    //position: absolute;
-    //margin-left: 455px;
     padding-left: 20px;
-    //margin-top: 200px;
     border-left: solid white 5px;
 
     a {
@@ -96,9 +101,25 @@
   font-weight: lighter !important;
   text-shadow: $shadow;
 
-  border-left: solid white 0.25em;
+  @media (min-width: $mobile-width) {
+    // For desktop
 
-  margin-top: 50%;
+    border-left: solid white 0.25em;
+    padding-left: 0.5em !important;
+    margin-left: 1.5em;
+    margin-top: 50%;
+  }
+
+  @media (max-width: $mobile-width) {
+    // For mobile
+
+    margin-top: 1em;
+    border-top: solid white 0.25em;
+    padding-top: 0.5em !important;
+    padding-left: 0.4em !important;
+    padding-right: 0.4em !important;
+  }
+
   margin-bottom: 10%;
 
   text-align: left !important;
