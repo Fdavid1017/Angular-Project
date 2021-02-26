@@ -3,6 +3,8 @@
 .full-background {
   background-size: cover;
   background-image: url("../../assets/parallel/full.jpg");
+  background-position-x: center;
+
   -webkit-box-shadow: -10px 0px 20px 2px rgba(0, 0, 0, 0.35);
   box-shadow: -10px 0px 20px 2px rgba(0, 0, 0, 0.35);
 }
@@ -10,12 +12,14 @@
 .background {
   background-size: cover;
   background-image: url("../../assets/parallel/sky.png");
+  background-position-x: center;
   position: absolute;
 }
 
 .foreground {
   background-size: cover;
   background-image: url("../../assets/parallel/front.png");
+  background-position-x: center;
   position: absolute;
   z-index: 100;
 }

@@ -20,7 +20,7 @@ export class SlideShowComponent implements AfterViewInit {
     this.showSlides(this.slideIndex);
 
     const source = interval(4000);
-    this.subscription = source.subscribe(() => this.plusSlides(1));
+    // this.subscription = source.subscribe(() => this.plusSlides(1));
 
   }
 
