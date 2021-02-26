@@ -11,27 +11,11 @@
   background-size: cover;
   background-image: url("../../assets/parallel/sky.png");
   position: absolute;
-  z-index: 2;
 }
 
 .foreground {
   background-size: cover;
   background-image: url("../../assets/parallel/front.png");
   position: absolute;
-  z-index: 4;
-}
-
-.info-text {
-  text-align: center;
-  font-weight: bold;
-  font-size: 45px;
-  color: white;
-  text-shadow: $shadow;
-}
-
-.weather-panel {
-  color: white;
-  font-size: 48px;
-  font-weight: bolder;
-  text-shadow: $shadow;
+  z-index: 100;
 }
