@@ -10,6 +10,8 @@ import {CarouselModule} from 'primeng/carousel';
 import {HttpClientModule} from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { SlideShowComponent } from './slide-show/slide-show.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import {RippleModule} from 'primeng/ripple';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,7 @@ import { SlideShowComponent } from './slide-show/slide-show.component';
     RightHalfComponent,
     HomeComponent,
     SlideShowComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +28,7 @@ import { SlideShowComponent } from './slide-show/slide-show.component';
     RouterModule,
     CarouselModule,
     HttpClientModule,
+    RippleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

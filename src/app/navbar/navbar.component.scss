@@ -1,0 +1,32 @@
+@import "src/variables";
+
+:host {
+  ::ng-deep .p-menubar {
+    background: rgba(0,0,0,0);
+    border: none;
+    color: #D91E1E !important;
+  }
+
+  ::ng-deep .p-menubar .p-menuitem .p-menuitem-link .p-menuitem-text{
+    color: white !important;
+  }
+
+  ::ng-deep .p-menubar .p-menuitem-link:hover{
+    background: $primary !important;
+  }
+
+  @media (max-width: $mobile-width) {
+    // For mobile
+    ::ng-deep .p-menubar .p-menuitem-link{
+      background: $primary !important;
+    }
+  }
+
+  ::ng-deep .p-menubar .p-menuitem-active .p-menu-list:hover{
+    background: $primary !important;
+  }
+
+  ::ng-deep .p-submenu-list{
+    background: $primary-darker !important;
+  }
+}

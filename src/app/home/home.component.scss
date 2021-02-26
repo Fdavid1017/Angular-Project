@@ -1,7 +1,6 @@
 @import "src/variables";
 
 .side-images {
-  margin-top: 2em;
 
   @media (min-width: $mobile-width) {
     // For desktop
@@ -16,25 +15,22 @@
 
   ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
 
     li {
+      margin-top: 0.75em !important;
+
       iframe, img {
-
         max-width: 100%;
-
         padding: 0;
         margin: 0;
         box-shadow: $shadow;
       }
 
-      img {
-        margin-top: 1em;
-      }
-
       iframe {
         height: 100% !important;
+        margin-top: 0 !important;
       }
     }
   }
@@ -107,7 +103,7 @@
     border-left: solid white 0.25em;
     padding-left: 0.5em !important;
     margin-left: 1.5em;
-    margin-top: 50%;
+    margin-top: 52.5%;
   }
 
   @media (max-width: $mobile-width) {
@@ -123,28 +119,50 @@
   margin-bottom: 10%;
 
   text-align: left !important;
+}
 
-  a {
-    border: none;
-    border-radius: 50px;
-    color: $primary-darker;
-    background-color: white;
-    padding: .1em .6em;
-    text-shadow: none;
-    box-shadow: $shadow;
-    text-decoration: none;
+.my-button {
+  border: none;
+  border-radius: 50px;
+  color: $primary-darker;
+  background-color: white;
+  padding: .1em .6em;
+  text-shadow: none;
+  box-shadow: $shadow;
+  text-decoration: none;
+}
 
-    -webkit-transition: padding 0.2s linear,
-    box-shadow 0.1s linear;
-    -moz-transition: box-shadow 0.1s linear,
-    padding 0.2s linear;
-    -o-transition: box-shadow 0.1s linear,
-    padding 0.2s linear;
-    transition: padding 0.1s linear,
-    box-shadow 0.1s linear;
+.my-button-right-animation{
+  @extend .my-button;
 
-    &:hover {
-      padding-right: 1.2em;
-    }
+  -webkit-transition: padding 0.2s linear,
+  box-shadow 0.1s linear;
+  -moz-transition: box-shadow 0.1s linear,
+  padding 0.2s linear;
+  -o-transition: box-shadow 0.1s linear,
+  padding 0.2s linear;
+  transition: padding 0.1s linear,
+  box-shadow 0.1s linear;
+
+  &:hover {
+    padding-right: 1.2em;
+  }
+}
+
+.my-button-both-side-animation{
+  @extend .my-button;
+
+  -webkit-transition: padding 0.2s linear,
+  box-shadow 0.1s linear;
+  -moz-transition: box-shadow 0.1s linear,
+  padding 0.2s linear;
+  -o-transition: box-shadow 0.1s linear,
+  padding 0.2s linear;
+  transition: padding 0.1s linear,
+  box-shadow 0.1s linear;
+
+  &:hover {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
   }
 }
