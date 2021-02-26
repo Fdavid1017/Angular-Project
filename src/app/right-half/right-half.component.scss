@@ -21,5 +21,30 @@
   background-image: url("../../assets/parallel/front.png");
   background-position-x: center;
   position: absolute;
-  z-index: 100;
 }
+
+
+.text {
+  color: white;
+  font-weight: 1000;
+  font-size: 7.75vw;
+  text-shadow: $shadow;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: $mobile-width) {
+  // For desktop
+
+  .title-text-container {
+    padding-bottom: 3.5em;
+    padding-right: 22em;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  // For mobile
+
+  .title-text {
+  }
+}
+
