@@ -3,22 +3,47 @@
 .side-images {
   //position: absolute;
   //margin-left: -455px;
+  //margin: 0;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 2em;
 
   ul {
     list-style-type: none;
     margin: 0;
+    padding: 0;
 
     li {
-      padding-top: 20px;
-
       iframe, img {
-        width: 283px;
-        height: 150px;
+        //width: 283px;
+        //height: 150px;
+
+        max-width: 100%;
+        //max-height:100%;
+
         padding: 0;
         margin: 0;
         box-shadow: $shadow;
       }
+
+      img {
+        margin-top: 1em;
+      }
+
+      iframe {
+        height: 100% !important;
+      }
     }
+  }
+}
+
+.facebook-icon {
+  height: 1.5em;
+  opacity: 75%;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 100%;
   }
 }
 
@@ -61,6 +86,44 @@
         background-color: lightgray;
         text-decoration: none;
       }
+    }
+  }
+}
+
+.content {
+  color: white;
+  font-size: 1.19em;
+  font-weight: lighter !important;
+  text-shadow: $shadow;
+
+  border-left: solid white 0.25em;
+
+  margin-top: 50%;
+  margin-bottom: 10%;
+
+  text-align: left !important;
+
+  a {
+    border: none;
+    border-radius: 50px;
+    color: $primary-darker;
+    background-color: white;
+    padding: .1em .6em;
+    text-shadow: none;
+    box-shadow: $shadow;
+    text-decoration: none;
+
+    -webkit-transition: padding 0.2s linear,
+    box-shadow 0.1s linear;
+    -moz-transition: box-shadow 0.1s linear,
+    padding 0.2s linear;
+    -o-transition: box-shadow 0.1s linear,
+    padding 0.2s linear;
+    transition: padding 0.1s linear,
+    box-shadow 0.1s linear;
+
+    &:hover {
+      padding-right: 1.2em;
     }
   }
 }

@@ -18,12 +18,18 @@
 
 
 <div class="container-fluid">
-  <div class="row h-md-100 justify-content-center align-items-center">
-    <div class="col-md-7 col-sm-6 p-0 d-flex h-md-100 h-sd-100 half align-middle text-center justify-content-center align-items-center"
-         style="background-color: #F2A20C">
-      {{width}}
+  <div class="row h-md-100 h-sd-100 justify-content-center align-items-center">
+    <div class="col-md-7 col-sm-6 p-0 d-flex h-md-100 h-sd-100 w-100
+     half align-middle text-center justify-content-center align-items-center left-half">
+      <div class="h-md-100 h-sd-100 w-100 overlay">
+        <div>
+          <div class="">NavBar</div>
+          <router-outlet class="h-md-100 h-sd-100"></router-outlet>
+        </div>
+      </div>
     </div>
-    <div class="col-md-5 col-sm-6 d-flex p-0 h-md-100 h-sd-100 align-middle text-center justify-content-center align-items-center">
+    <div
+      class="col-md-5 col-sm-6 d-flex p-0 h-md-100 h-sd-100 align-middle text-center justify-content-center align-items-center">
       <app-right-half class="p-0 h-md-100 w-100"></app-right-half>
     </div>
   </div>
