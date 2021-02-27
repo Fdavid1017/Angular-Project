@@ -19,6 +19,11 @@ import {AnimationTestComponent} from './animation-test/animation-test.component'
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ScrollTopModule} from 'primeng/scrolltop';
 import {DialogModule} from 'primeng/dialog';
+import { SzervezetiFelepitesComponent } from './contents/szervezeti-felepites/szervezeti-felepites.component';
+import { TarsulasokComponent } from './contents/tarsulasok/tarsulasok.component';
+import { ArculatikezikonyvComponent } from './contents/arculatikezikonyv/arculatikezikonyv.component';
+import { KozoshivatalComponent } from './contents/kozoshivatal/kozoshivatal.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +35,11 @@ import {DialogModule} from 'primeng/dialog';
     ContentBaseComponent,
     TortenelemComponent,
     AnimationTestComponent,
+    SzervezetiFelepitesComponent,
+    TarsulasokComponent,
+    ArculatikezikonyvComponent,
+    KozoshivatalComponent,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,

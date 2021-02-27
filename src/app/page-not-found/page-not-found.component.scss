@@ -1,0 +1,12 @@
+@import "src/variables";
+
+h1 {
+  color: white;
+  font-width: 1000;
+  text-shadow: $shadow;
+
+  @media (min-width: $mobile-width) {
+    // For desktop
+    margin-top: 10em;
+  }
+}

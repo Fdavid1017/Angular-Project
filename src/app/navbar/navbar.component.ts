@@ -28,7 +28,7 @@ export class NavbarComponent implements OnInit {
         items: [
           {
             label: 'Szervezeti felépítés',
-            routerLink: 'szervezetifelépítés'
+            routerLink: 'szervezetifelepites'
           },
           {
             label: 'Társulások',
@@ -37,10 +37,6 @@ export class NavbarComponent implements OnInit {
           {
             label: 'Arculati kézikönyv',
             routerLink: 'arculatikezikonyv'
-          },
-          {
-            label: 'Választás',
-            routerLink: 'valasztas'
           },
           {
             label: 'Közös hivatal',
