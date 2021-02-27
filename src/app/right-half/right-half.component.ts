@@ -40,7 +40,9 @@ export class RightHalfComponent implements OnInit {
   }
 
   changePosition(newPosition: string): void {
-    this.position = newPosition;
+    if (window.innerWidth > 768) {
+      this.position = newPosition;
+    }
   }
 
   assignWeather(): void {

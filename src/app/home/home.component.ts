@@ -9,6 +9,9 @@ import {PrimeNGConfig} from 'primeng/api';
 })
 export class HomeComponent implements OnInit {
 
+  display = false;
+  imageUrl: string;
+
   constructor(private primengConfig: PrimeNGConfig) {
   }
 
@@ -16,4 +19,8 @@ export class HomeComponent implements OnInit {
     this.primengConfig.ripple = true;
   }
 
+  showDialog(url: string): void {
+    this.imageUrl = url;
+    this.display = true;
+  }
 }

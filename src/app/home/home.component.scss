@@ -32,6 +32,10 @@
         height: 100% !important;
         margin-top: 0 !important;
       }
+
+      img {
+        cursor: pointer;
+      }
     }
   }
 }
@@ -132,7 +136,7 @@
   text-decoration: none;
 }
 
-.my-button-right-animation{
+.my-button-right-animation {
   @extend .my-button;
 
   -webkit-transition: padding 0.2s linear,
@@ -149,7 +153,7 @@
   }
 }
 
-.my-button-both-side-animation{
+.my-button-both-side-animation {
   @extend .my-button;
 
   -webkit-transition: padding 0.2s linear,
@@ -164,5 +168,21 @@
   &:hover {
     padding-left: 1.2em;
     padding-right: 1.2em;
+  }
+}
+
+:host {
+  @media (max-width: $mobile-width) {
+    // For mobile
+    ::ng-deep.p-dialog {
+      width: 90%;
+    }
+  }
+
+  @media (min-width: $mobile-width) {
+    // For desktop
+    ::ng-deep.p-dialog {
+      width: 75%;
+    }
   }
 }

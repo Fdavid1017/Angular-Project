@@ -18,6 +18,7 @@ import {TortenelemComponent} from './contents/tortenelem/tortenelem.component';
 import {AnimationTestComponent} from './animation-test/animation-test.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {ScrollTopModule} from 'primeng/scrolltop';
+import {DialogModule} from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import {ScrollTopModule} from 'primeng/scrolltop';
     RippleModule,
     ScrollPanelModule,
     BrowserAnimationsModule,
-    ScrollTopModule
+    ScrollTopModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

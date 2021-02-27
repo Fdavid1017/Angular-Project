@@ -10,8 +10,18 @@ h1 {
   text-shadow: $shadow;
 }
 
+
 .base{
-  margin-top: 5em;
+  @media (min-width: $mobile-width) {
+    // For desktop
+    margin-top: 5em;
+  }
+
+  @media (max-width: $mobile-width) {
+    // For mobile
+    margin-bottom: 2em;
+  }
+
 }
 
 :host {

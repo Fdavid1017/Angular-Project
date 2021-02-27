@@ -1,3 +1,7 @@
+<p-dialog [(visible)]="display" [modal]="true">
+  <img [src]="imageUrl" [style]="{width: '85%'}">
+</p-dialog>
+
 <div class="row h-100 w-100 m-0">
   <div class="col-md-4 col-sm-6 w-100 h-100 p-0">
     <!--  Left col  -->
@@ -9,13 +13,13 @@
                   allowfullscreen></iframe>
         </li>
         <li>
-          <img src="assets/side-image-1.jpg">
+          <img src="assets/side-image-1.jpg" (click)="showDialog('assets/side-image-1.jpg')">
         </li>
         <li>
-          <img src="assets/side-image-2.jpg">
+          <img src="assets/side-image-2.jpg" (click)="showDialog('assets/side-image-2.jpg')">
         </li>
         <li>
-          <img src="assets/side-image-3.jpg">
+          <img src="assets/side-image-3.jpg" (click)="showDialog('assets/side-image-3.jpg')">
         </li>
       </ul>
     </div>
@@ -26,7 +30,7 @@
       Rákóczibánya területén 1858-ban kutattak először szénlelőhelyek után. A település első írásos emléke egy 1870-es
       keresztelési anyakönyv.
     </p>
-    <a class="my-button-right-animation"  routerLink="tortenelem" href="#">Bővebben</a>
+    <a class="my-button-right-animation" routerLink="tortenelem" href="#">Bővebben</a>
   </div>
   <div class="col-md-1"></div>
 </div>
