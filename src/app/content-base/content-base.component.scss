@@ -10,6 +10,10 @@ h1 {
   text-shadow: $shadow;
 }
 
+.base{
+  margin-top: 5em;
+}
+
 :host {
   ::ng-deep.p-scrollpanel {
 
@@ -38,5 +42,11 @@ h1 {
         @extend h1;
       }
     }
+  }
+
+  ::ng-deep.p-scrolltop{
+    background: $secondary;
+    border: none;
+    border-radius: 50%;
   }
 }

@@ -10,7 +10,7 @@
 <div class="d-md-flex align-items-center h-md-100 h-sd-100 justify-content-center full-background">
   <div class="d-md-flex align-items-center h-md-100 h-sd-100 w-100 justify-content-center background">
     <div class="d-flex w-100 justify-content-center title-text-container">
-      <p class="text">RÁKÓCZIBÁNYA</p>
+      <p class="text" [@titleState]="position" (click)="changePosition('null')">RÁKÓCZIBÁNYA</p>
     </div>
     <div class="d-md-flex align-items-end h-md-100 h-sd-100 w-100 p-5 justify-content-center foreground">
       <app-slide-show class="w-100"

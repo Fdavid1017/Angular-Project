@@ -1,9 +1,10 @@
-<div class="p-grid">
+<div class="p-grid base">
   <div class="p-col-12 px-4">
     <h1>{{content.title}}</h1>
-    <p-scrollPanel [style]="{width: '100%', height: '85vh'}">
+    <p-scrollPanel [style]="{width: '100%', height: '70vh'}">
       <p *ngFor="let paragraph of content.paragraphs" [innerHTML]="paragraph">
       </p>
+      <p-scrollTop target="parent" [threshold]="100" ></p-scrollTop>
     </p-scrollPanel>
   </div>
 </div>

@@ -8,13 +8,16 @@ import {RightHalfComponent} from './right-half/right-half.component';
 import {RouterModule} from '@angular/router';
 import {CarouselModule} from 'primeng/carousel';
 import {HttpClientModule} from '@angular/common/http';
-import { HomeComponent } from './home/home.component';
-import { SlideShowComponent } from './slide-show/slide-show.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import {HomeComponent} from './home/home.component';
+import {SlideShowComponent} from './slide-show/slide-show.component';
+import {NavbarComponent} from './navbar/navbar.component';
 import {RippleModule} from 'primeng/ripple';
-import { ContentBaseComponent } from './content-base/content-base.component';
+import {ContentBaseComponent} from './content-base/content-base.component';
 import {ScrollPanelModule} from 'primeng/scrollpanel';
-import { TortenelemComponent } from './contents/tortenelem/tortenelem.component';
+import {TortenelemComponent} from './contents/tortenelem/tortenelem.component';
+import {AnimationTestComponent} from './animation-test/animation-test.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ScrollTopModule} from 'primeng/scrolltop';
 
 @NgModule({
   declarations: [
@@ -25,17 +28,20 @@ import { TortenelemComponent } from './contents/tortenelem/tortenelem.component'
     NavbarComponent,
     ContentBaseComponent,
     TortenelemComponent,
+    AnimationTestComponent,
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        MenubarModule,
-        RouterModule,
-        CarouselModule,
-        HttpClientModule,
-        RippleModule,
-        ScrollPanelModule,
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    MenubarModule,
+    RouterModule,
+    CarouselModule,
+    HttpClientModule,
+    RippleModule,
+    ScrollPanelModule,
+    BrowserAnimationsModule,
+    ScrollTopModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

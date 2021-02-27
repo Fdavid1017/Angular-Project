@@ -1,22 +1,46 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpService} from '../http.service';
+import {animate, state, style, transition, trigger} from '@angular/animations';
+import {NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-right-half',
   templateUrl: './right-half.component.html',
-  styleUrls: ['./right-half.component.scss']
+  styleUrls: ['./right-half.component.scss'],
+  animations: [
+    trigger('titleState', [
+      state('move', style({
+        transform: 'translateY(-180%)'
+      })),
+      transition('* => *', animate('500ms ease'))
+    ])
+  ]
 })
 export class RightHalfComponent implements OnInit {
+
+  constructor(private http: HttpService, private router: Router) {
+    router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        if (this.router.url === '/') {
+          this.changePosition('null');
+        } else {
+          this.changePosition('move');
+        }
+      }
+    });
+  }
 
   weather: object;
   temperature: number;
   iconUrl: string;
-
-  constructor(private http: HttpService) {
-  }
+  position: string;
 
   ngOnInit(): void {
     this.assignWeather();
+  }
+
+  changePosition(newPosition: string): void {
+    this.position = newPosition;
   }
 
   assignWeather(): void {
