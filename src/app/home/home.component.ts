@@ -11,8 +11,10 @@ export class HomeComponent implements OnInit {
 
   display = false;
   imageUrl: string;
+  isDesktop = true;
 
   constructor(private primengConfig: PrimeNGConfig) {
+    this.isDesktop = window.innerWidth > 768;
   }
 
   ngOnInit(): void {

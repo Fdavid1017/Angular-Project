@@ -2,6 +2,8 @@
   <img [src]="imageUrl" [style]="{width: '85%'}">
 </p-dialog>
 
+<div *ngIf="isDesktop" class="circle"></div>
+
 <div class="row h-100 w-100 m-0">
   <div class="col-md-4 col-sm-6 w-100 h-100 p-0">
     <!--  Left col  -->
@@ -34,7 +36,7 @@
   </div>
   <div class="col-md-1"></div>
 </div>
-<div class="d-md-flex mt-2 pl-5">
+<div class="d-md-flex mt-2 pl-5 overflow-hidden">
   <a href="https://www.facebook.com/rakoczibanya" target="_blank">
     <img class="facebook-icon" src="assets/Facebook-Logo.svg">
   </a>
