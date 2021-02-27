@@ -27,7 +27,6 @@ export class RightHalfComponent implements OnInit {
 
       // @ts-ignore
       const icon = this.weather.weather[0].icon[0].toString() + this.weather.weather[0].icon[1].toString();
-      console.log(icon);
 
       switch (icon) {
         case '01':
@@ -59,9 +58,6 @@ export class RightHalfComponent implements OnInit {
           this.iconUrl = './assets/weathericons/clear-sky.svg';
           break;
       }
-      console.log(this.iconUrl);
-      // @ts-ignore
-      // this.iconUrl = 'http://openweathermap.org/img/wn/' + this.weather.weather[0].icon + '@2x.png';
     });
   }
 }

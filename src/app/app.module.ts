@@ -12,6 +12,9 @@ import { HomeComponent } from './home/home.component';
 import { SlideShowComponent } from './slide-show/slide-show.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {RippleModule} from 'primeng/ripple';
+import { ContentBaseComponent } from './content-base/content-base.component';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
+import { TortenelemComponent } from './contents/tortenelem/tortenelem.component';
 
 @NgModule({
   declarations: [
@@ -20,16 +23,19 @@ import {RippleModule} from 'primeng/ripple';
     HomeComponent,
     SlideShowComponent,
     NavbarComponent,
+    ContentBaseComponent,
+    TortenelemComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    MenubarModule,
-    RouterModule,
-    CarouselModule,
-    HttpClientModule,
-    RippleModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        MenubarModule,
+        RouterModule,
+        CarouselModule,
+        HttpClientModule,
+        RippleModule,
+        ScrollPanelModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,42 @@
+@import "src/variables";
+
+* {
+  color: white;
+}
+
+h1 {
+  font-weight: bolder;
+  text-align: center !important;
+  text-shadow: $shadow;
+}
+
+:host {
+  ::ng-deep.p-scrollpanel {
+
+    .p-scrollpanel-wrapper {
+      border-right: 9px solid var(--layer-1);
+    }
+
+    .p-scrollpanel-bar {
+      background-color: $primary;
+      opacity: 1;
+      transition: background-color .2s;
+
+      &:hover {
+        background-color: $primary-darker;
+      }
+    }
+
+    text-shadow: $shadow;
+    max-height: 100%;
+
+    p {
+      text-align: left;
+      font-size: large;
+
+      h {
+        @extend h1;
+      }
+    }
+  }
+}
